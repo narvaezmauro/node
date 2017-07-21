@@ -1,0 +1,6 @@
+__MACOSX
+thumbs.db
+bower_components
+node_modules
+.tmp
+dist

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+	<h1>Sin escapar</h1>
+	<%= textoSinEscapar %>
+
+	<h1>Incluir una condicion</h1>
+	<% if (condicion.estado){ %>
+	<p><%= condicion.segundo %> es par </p>
+	<% } else { %>
+	<p><%= condicion.segundo %> es impar </p>
+	<%} %>
+
+	<h1>Incluir listas</h1>
+	<% usuarios.forEach(function(usuario){ %>
+	<p><%= usuario.nombre %></p>
+	<% }) %>
+
+  </body>
+</html>
